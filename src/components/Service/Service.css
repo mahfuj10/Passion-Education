@@ -1,0 +1,51 @@
+.service-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 100px;
+}
+.service-contaner {
+  background-color: #ededed;
+}
+.courseTitle {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .service-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .courseTitle {
+    position: static;
+    margin-left: 0px;
+    padding-top: 25px;
+  }
+  .service-contaner {
+    margin-top: 60px;
+  }
+}
+
+/* tab version */
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .service-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+  .courseTitle {
+    position: static;
+    margin-left: 10px;
+    padding-top: 45px;
+  }
+}

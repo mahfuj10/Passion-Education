@@ -1,0 +1,39 @@
+/* our teeam member */
+
+.OurTeam {
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  row-gap: 50px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.instrustorImg {
+  height: 200px;
+  width: 200px;
+}
+
+/* --------------
+   media query
+--------------*/
+@media (max-width: 600px) {
+  .OurTeam {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 8px;
+  }
+  .ourTeamText {
+    margin-top: 100px !important;
+    width: 80% !important;
+  }
+}
+
+/* tab version */
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .OurTeam {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ourTeamText {
+    margin-top: 50px !important;
+  }
+}

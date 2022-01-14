@@ -1,0 +1,86 @@
+/* card style */
+.aboutCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 60px;
+  margin-top: 60px;
+}
+
+.sectionText {
+  margin-top: 70px !important;
+}
+
+
+/* header img */
+.LearningImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+  /* margin-top: 130px;
+  margin-bottom: 140px; */
+  margin-left: 0;
+  margin-right: 0;
+  animation: rotateImg 6s linear infinite;
+}
+
+/* animation  */
+/* @keyframes rotateImg{
+ from{
+   transform: rotate(0deg);
+ } 
+ to{
+   transform: rotate(360deg);
+ }
+} */
+
+
+.codingImg {
+  display: flex;
+  justify-content: center;
+}
+/* icon */
+.detailsText i {
+  font-size: 18px;
+  color: #196ecd;
+}
+
+/* paragraph */
+.detailsText p {
+  color: rgb(141, 133, 133);
+  font-family: "Roboto", sans-serif;
+}
+
+/* ---------------
+  media query
+---------------- */
+/* mobile version */
+@media (max-width: 600px) {
+  .detailsText {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .sectionText {
+    width: 95% !important;
+    margin-top: 50px !important;
+  }
+  .detailsSectionImg {
+    margin-left: 0;
+  }
+}
+
+/* media query tab version */
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .detailsSectionImg {
+    margin-left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .detalsTextContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 25px;
+  }
+}

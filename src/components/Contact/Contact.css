@@ -1,0 +1,58 @@
+.contactDetails {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.contactText {
+  margin-left: 50%;
+}
+.contactText p {
+  font-size: 18px;
+  text-align: justify;
+  color: rgba(128, 128, 128, 0.863);
+}
+
+/* button style */
+
+.conatactBtn {
+  border: none;
+  padding: 8px 14px;
+  border: 1px solid #090761;
+  background-color: white;
+  font-size: 16px;
+  color: #090761;
+  font-family: "Roboto", sans-serif;
+}
+/*-----------------
+   media query
+   ------------- */
+/* for mobile */
+@media (max-width: 600px) {
+  .contactText {
+    margin-left: 10px;
+  }
+  .contactForm {
+    width: 90% !important;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .googleMap {
+    margin-top: 50px;
+  }
+  .contactDetails {
+    margin-top: 60px;
+  }
+}
+
+/* tab version */
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .contactText {
+    margin-left: 10px;
+  }
+  .contactForm {
+    width: 98% !important;
+  }
+  .googleMap {
+    margin-top: 50px;
+  }
+}
